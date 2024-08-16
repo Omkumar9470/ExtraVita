@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtraVita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MoringaPower</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="1v.gif" alt="Banner 1">
+                <div class="hero-content">
+                    <h1>Pure Moringa Powder</h1>
+                    <p>Unlock the power of nature with our premium moringa products.</p>
+                    <a href="#" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="6.jpeg" alt="Banner 2">
+                <div class="hero-content">
+                    <h1>Natural Energy Booster</h1>
+                    <p>Feel the difference with our organic moringa supplements.</p>
+                    <a href="#" class="cta-button">Discover More</a>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="10.jpeg" alt="Banner 3">
+                <div class="hero-content">
+                    <h1>Health and Wellness</h1>
+                    <p>Enhance your lifestyle with our range of moringa products.</p>
+                    <a href="#" class="cta-button">Explore Now</a>
+                </div>
+            </div>
+            <a class="carousel-control prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="carousel-control next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products" class="featured-products">
+        <h2>Our BestSellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="2.jpeg" alt="Product 1">
+                <h3>Moringa Powder 100g</h3>
+                <p>$12.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="3.jpeg" alt="Product 2">
+                <h3>Moringa Capsules 60pcs</h3>
+                <p>$15.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="4.jpeg" alt="Product 3">
+                <h3>Moringa Tea Bags</h3>
+                <p>$9.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="5.jpeg" alt="Product 3">
+                <h3>Moringa Tea Bags</h3>
+                <p>$9.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            </div>
+        </div>
+        <div class="product-grid1">
+            <div class="product-card">
+                <img src="2.jpeg" alt="Product 1">
+                <h3>Moringa Powder 100g</h3>
+                <p>$12.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="9.jpeg" alt="Product 1">
+                <h3>Moringa Powder 100g</h3>
+                <p>$12.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="5.jpeg" alt="Product 1">
+                <h3>Moringa Powder 100g</h3>
+                <p>$12.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="4.jpeg" alt="Product 1">
+                <h3>Moringa Powder 100g</h3>
+                <p>$12.99</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Philosophy Section -->
+    <section class="brand-philosophy">
+        <h2>Our Brand Philosophy</h2>
+        <p>At MoringaPower, we believe in providing the purest and most natural form of Moringa to support your health and wellness. Our products undergo stringent quality checks to ensure they are free from contaminants and packed with nutrients.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Learn more about our mission and values.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <p>Have questions? Get in touch with us.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay connected through our social media channels.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MoringaPower. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("carousel-item");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slides[slideIndex].style.display = "block";
+        }
+
+        function plusSlides(n) {
+            let slides = document.getElementsByClassName("carousel-item");
+            slideIndex += n;
+
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            } else if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            showSlides(slideIndex);
+        }
+    </script>
+</body>
+</html>
